@@ -656,3 +656,16 @@ footer a:hover {
     }
 
 }
+
+.project-list {
+    padding-left: 18px;
+    margin-top: 12px;
+    color: #aaa;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.project-list li {
+    padding-left: 3px;
+    margin-bottom: 3px;
+}
