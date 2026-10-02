@@ -38,16 +38,16 @@
             <h1>Product Crawler</h1>
 
             <p class="project-summary">
-                A tool I built to help Inventory Control identify
-                products with low or no stock across the UNIQLO
-                Canada website.
+                An Excel-based tool I built to help Inventory Control
+                identify products with low or no stock across the
+                UNIQLO Canada website.
             </p>
 
             <div class="tools">
                 <span>Python</span>
                 <span>PowerShell</span>
-                <span>Google Sheets</span>
-                <span>Tableau</span>
+                <span>VBA</span>
+                <span>Excel</span>
             </div>
 
         </section>
@@ -102,7 +102,9 @@
                 </p>
 
                 <p>
-                    I needed to build that missing connection.
+                    I needed to build that missing connection while
+                    keeping the workflow simple enough for a non-technical
+                    user to run.
                 </p>
 
             </div>
@@ -117,17 +119,20 @@
                 </div>
 
                 <p>
-                    I built a Python and PowerShell crawler that connects
-                    the existing stock data with the products found across
-                    the website.
+                    I built a Python and PowerShell crawler that scans
+                    250+ product pages and identifies the product IDs
+                    found on each URL. I then connected the crawler to
+                    an Excel workbook using VBA so the process could be
+                    started directly from Excel.
                 </p>
 
                 <ol class="project-list">
-                    <li>Import stock data from Tableau into Google Sheets.</li>
-                    <li>Place the current website sitemap into the tool.</li>
-                    <li>Crawl 250+ product pages to identify product IDs on each URL.</li>
+                    <li>Import stock data from Tableau into Excel.</li>
+                    <li>Provide the website sitemap to the tool.</li>
+                    <li>Run the crawler directly from the Excel workbook.</li>
+                    <li>Identify product IDs across 250+ website pages.</li>
                     <li>Map product IDs to their stockout information.</li>
-                    <li>Generate actionable results in Google Sheets.</li>
+                    <li>Generate the final outputs in Excel.</li>
                 </ol>
 
                 <div class="project-image-grid">
@@ -135,20 +140,20 @@
                     <figure class="project-image">
                         <img
                             src="images/uniqlo/crawler-01.gif"
-                            alt="Product crawler running on UNIQLO product pages"
+                            alt="UNIQLO product pages opening automatically during the crawl"
                         >
                         <figcaption>
-                            Crawling the website to identify product IDs on each URL.
+                            Product pages opening automatically as the crawler moves through the website.
                         </figcaption>
                     </figure>
 
                     <figure class="project-image">
                         <img
                             src="images/uniqlo/crawler-02.gif"
-                            alt="Product crawler processing website data"
+                            alt="PowerShell running the website crawler"
                         >
                         <figcaption>
-                            Processing the crawled data for the Google Sheets output.
+                            PowerShell running the crawler and collecting product IDs from each page.
                         </figcaption>
                     </figure>
 
@@ -166,21 +171,23 @@
                 </div>
 
                 <p>
-                    I designed the workflow around the team's existing
-                    Google Sheets process rather than introducing a new
-                    interface.
+                    Rather than requiring the team to run Python,
+                    PowerShell, or the crawler itself, I packaged the
+                    crawler as an executable and connected it directly
+                    to the Excel workbook.
                 </p>
 
                 <p>
-                    The tool uses one button to start the crawl, includes
-                    instructions in the sheet, hides helper sheets, and
-                    provides a Settings tab where the stockout threshold
-                    can be adjusted.
+                    The user only needs the packaged tool installed and
+                    can start the entire process from the Excel workbook.
+                    Instructions are built into the sheet, helper sheets
+                    are hidden, and a Settings tab allows the stockout
+                    threshold to be adjusted.
                 </p>
 
                 <p>
                     The current crawl takes approximately 10–15 minutes
-                    to complete.
+                    to complete with minimal user interaction.
                 </p>
 
             </div>
@@ -195,15 +202,16 @@
                 </div>
 
                 <p>
-                    The tool produces two main outputs: an actionable list
-                    of pages requiring attention and a summary of website
-                    stockout performance.
+                    Once the crawl finishes, the workbook produces two
+                    main outputs: an actionable list of pages requiring
+                    attention and a summary of website stockout
+                    performance.
                 </p>
 
                 <figure class="project-image">
                     <img
                         src="images/uniqlo/products-to-remove.jpg"
-                        alt="Google Sheets output showing products and pages requiring attention"
+                        alt="Excel output showing products and pages requiring attention"
                     >
                     <figcaption>
                         Output identifying products and pages that meet
@@ -214,7 +222,7 @@
                 <figure class="project-image">
                     <img
                         src="images/uniqlo/summary-output.png"
-                        alt="Google Sheets summary of website stockout performance"
+                        alt="Excel summary of website stockout performance"
                     >
                     <figcaption>
                         Summary output showing product-level and website
