@@ -9,10 +9,11 @@ html {
 }
 
 body {
-    background: #f7f6f2;
-    color: #171717;
+    background: #111111;
+    color: #e8e8e8;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.4;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 a {
@@ -27,67 +28,67 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 28px 40px;
+    padding: 24px 32px;
 }
 
 .logo {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 nav {
     display: flex;
-    gap: 28px;
+    gap: 20px;
 }
 
 nav a {
-    font-size: 15px;
+    color: #888;
+    font-size: 13px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #e8e8e8;
 }
 
 
 /* MAIN */
 
 main {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 100px 40px 160px;
+    padding: 70px 32px 120px;
 }
 
 
 /* INTRO */
 
 .intro {
-    max-width: 750px;
-    margin-bottom: 150px;
+    max-width: 560px;
+    margin-bottom: 90px;
 }
 
 .intro h1 {
-    font-size: clamp(40px, 6vw, 72px);
-    font-weight: 500;
-    line-height: 1.05;
-    letter-spacing: -2px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: -0.2px;
 }
 
 .intro p {
-    margin-top: 30px;
-    font-size: 20px;
-    color: #666;
+    margin-top: 14px;
+    color: #888;
+    font-size: 14px;
 }
 
 
 /* SECTION LABEL */
 
 .section-label {
-    margin-bottom: 25px;
-    font-size: 13px;
+    margin-bottom: 12px;
+    color: #666;
+    font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: #777;
 }
 
 
@@ -95,43 +96,44 @@ main {
 
 .project {
     display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 30px;
+    grid-template-columns: 70px 1fr;
+    gap: 20px;
 
-    padding: 28px 0;
-    border-top: 1px solid #d6d5d0;
+    padding: 16px 0;
+    border-top: 1px solid #292929;
 
-    transition: padding-left 0.2s ease;
+    transition: background 0.15s ease;
 }
 
 .project:last-child {
-    border-bottom: 1px solid #d6d5d0;
+    border-bottom: 1px solid #292929;
 }
 
 .project:hover {
-    padding-left: 10px;
+    background: #171717;
 }
 
 .project-year {
-    font-size: 14px;
-    color: #777;
+    color: #666;
+    font-size: 12px;
 }
 
 .project-info h2 {
-    font-size: 28px;
+    font-size: 15px;
     font-weight: 500;
 }
 
 .project-info p {
-    margin-top: 5px;
-    font-size: 17px;
+    margin-top: 2px;
+    color: #aaa;
+    font-size: 13px;
 }
 
 .project-info span {
     display: block;
-    margin-top: 8px;
-    font-size: 14px;
-    color: #777;
+    margin-top: 4px;
+    color: #666;
+    font-size: 12px;
 }
 
 
@@ -139,7 +141,7 @@ main {
 
 .also-section,
 .other-section {
-    margin-top: 120px;
+    margin-top: 70px;
 }
 
 
@@ -147,16 +149,14 @@ main {
 
 footer {
     display: flex;
-    gap: 25px;
-
-    padding: 30px 40px 50px;
-
-    font-size: 14px;
+    gap: 20px;
+    padding: 24px 32px 40px;
     color: #666;
+    font-size: 12px;
 }
 
 footer a:hover {
-    color: #171717;
+    color: #e8e8e8;
 }
 
 
@@ -165,39 +165,31 @@ footer a:hover {
 @media (max-width: 700px) {
 
     .site-header {
-        padding: 22px 20px;
+        padding: 20px;
     }
 
     nav {
-        gap: 16px;
+        gap: 14px;
     }
 
     main {
-        padding: 70px 20px 100px;
+        padding: 55px 20px 90px;
     }
 
     .intro {
-        margin-bottom: 100px;
+        margin-bottom: 70px;
     }
 
     .intro h1 {
-        letter-spacing: -1px;
-    }
-
-    .intro p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .project {
-        grid-template-columns: 70px 1fr;
-        gap: 15px;
-    }
-
-    .project-info h2 {
-        font-size: 23px;
+        grid-template-columns: 55px 1fr;
+        gap: 12px;
     }
 
     footer {
-        padding: 25px 20px 40px;
+        padding: 20px;
     }
 }
