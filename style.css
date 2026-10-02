@@ -356,3 +356,110 @@ footer a:hover {
         font-size: 11px;
     }
 }
+/* RESUME */
+
+.resume-intro {
+    width: 500px;
+    max-width: 100%;
+    margin-bottom: 55px;
+}
+
+
+.resume-about {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 18px;
+}
+
+
+.resume-section {
+    margin-top: 50px;
+}
+
+
+.resume-entry {
+    padding: 18px 0;
+    border-top: 1px dashed #303030;
+}
+
+
+.resume-entry:last-child {
+    border-bottom: 1px dashed #303030;
+}
+
+
+.resume-date {
+    color: #5fa9a3;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+
+.resume-entry h2 {
+    color: #eee;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.resume-role {
+    color: #aaa;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+
+.resume-description {
+    color: #bbb;
+    font-size: 12px;
+    line-height: 1.55;
+    max-width: 560px;
+    margin-top: 9px;
+}
+
+
+.resume-skills {
+    border-top: 1px dashed #303030;
+    padding-top: 14px;
+}
+
+
+.resume-skills p {
+    color: #bbb;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+.resume-skills span {
+    color: #999;
+}
+
+
+@media (max-width: 700px) {
+
+    .resume-intro {
+        width: 100%;
+    }
+
+
+    .resume-about {
+        font-size: 13px;
+    }
+
+
+    .resume-entry h2 {
+        font-size: 13px;
+    }
+
+
+    .resume-description {
+        font-size: 11px;
+    }
+
+
+    .resume-skills p {
+        font-size: 11px;
+    }
+}
