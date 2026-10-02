@@ -621,3 +621,38 @@ footer a:hover {
     }
 
 }
+/* PRODUCTIVITY APP IDEAS */
+
+.idea-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px 32px;
+    margin-top: 22px;
+}
+
+.idea-group h3 {
+    color: #ddd;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.idea-group ul {
+    padding-left: 15px;
+    color: #999;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.idea-group li {
+    padding-left: 2px;
+}
+
+@media (max-width: 700px) {
+
+    .idea-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+}
