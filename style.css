@@ -573,6 +573,7 @@ footer a:hover {
     width: 100%;
     height: auto;
     border: 1px solid #292929;
+    border-radius: 6px;
 }
 
 .project-image figcaption {
