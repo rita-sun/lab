@@ -51,7 +51,9 @@ footer {
 
 .logo {
     color: #eee;
+    font-family: "Orbitron", sans-serif;
     font-size: 12px;
+    font-weight: 400;
 }
 
 
@@ -63,12 +65,13 @@ nav {
 
 nav a {
     color: #888;
-    font-size: 11px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 10px;
 }
 
 
 nav a:hover {
-    color: #4f918c;
+    color: #5fa9a3;
     text-decoration: underline;
 }
 
@@ -107,10 +110,15 @@ main {
 }
 
 
-.intro p {
+.intro-info {
     margin-top: 15px;
+}
+
+
+.intro-info p {
     color: #aaa;
     font-size: 12px;
+    line-height: 1.6;
 }
 
 
@@ -118,7 +126,7 @@ main {
 
 .section-label {
     margin-bottom: 9px;
-    color: #4f918c;
+    color: #5fa9a3;
     font-family: "Orbitron", sans-serif;
     font-size: 10px;
     font-weight: 400;
@@ -155,13 +163,17 @@ main {
 }
 
 
+/* YEARS */
+
 .project-year {
-    color: #4f918c;
-    font-family: "Orbitron", sans-serif;
-    font-size: 9px;
+    color: #5fa9a3;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
     line-height: 1.5;
 }
 
+
+/* PROJECT INFO */
 
 .project-info h2 {
     color: #eee;
@@ -192,20 +204,20 @@ main {
 
     padding: 2px 6px;
 
-    background: rgba(79, 145, 140, 0.08);
-    border: 1px solid rgba(79, 145, 140, 0.17);
+    background: rgba(95, 169, 163, 0.08);
+    border: 1px solid rgba(95, 169, 163, 0.19);
     border-radius: 3px;
 
-    color: #aaa;
+    color: #b0b0b0;
     font-size: 10px;
     line-height: 1.3;
 }
 
 
 .project:hover .tools span {
-    background: rgba(79, 145, 140, 0.12);
-    border-color: rgba(79, 145, 140, 0.23);
-    color: #bbb;
+    background: rgba(95, 169, 163, 0.13);
+    border-color: rgba(95, 169, 163, 0.27);
+    color: #c0c0c0;
 }
 
 
@@ -230,7 +242,7 @@ footer {
 
 
 footer a:hover {
-    color: #4f918c;
+    color: #5fa9a3;
     text-decoration: underline;
 }
 
@@ -280,7 +292,7 @@ footer a:hover {
     }
 
 
-    .intro p {
+    .intro-info p {
         font-size: 11px;
     }
 
