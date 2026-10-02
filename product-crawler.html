@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Crawler · Rita Sun</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a href="index.html" class="logo">
+            Rita Sun
+        </a>
+
+        <nav>
+            <a href="index.html#work">Work</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+
+    </header>
+
+
+    <main class="project-page">
+
+        <!-- INTRO -->
+
+        <section class="project-intro">
+
+            <p class="project-meta">
+                2026 · UNIQLO · Internal Tool
+            </p>
+
+            <h1>Product Crawler</h1>
+
+            <p class="project-summary">
+                A tool I built to help Inventory Control identify
+                products with low or no stock across the UNIQLO
+                Canada website.
+            </p>
+
+            <div class="tools">
+                <span>Python</span>
+                <span>PowerShell</span>
+                <span>Google Sheets</span>
+                <span>Tableau</span>
+            </div>
+
+        </section>
+
+
+        <section class="project-content">
+
+
+            <!-- PROBLEM -->
+
+            <div class="project-section">
+
+                <div class="section-label">
+                    <span>The Problem</span>
+                </div>
+
+                <p>
+                    Inventory Control needed a way to identify products
+                    with low or no stock across the website so they could
+                    keep track of pages that needed attention.
+                </p>
+
+                <p>
+                    However, there was no record of which products
+                    appeared on which pages. The existing process involved
+                    manually checking products and guessing which pages
+                    they appeared on, making it too time-consuming to do
+                    regularly.
+                </p>
+
+            </div>
+
+
+            <!-- CHALLENGE -->
+
+            <div class="project-section">
+
+                <div class="section-label">
+                    <span>The Challenge</span>
+                </div>
+
+                <p>
+                    The information needed for the process already existed,
+                    but it lived in different places.
+                </p>
+
+                <p>
+                    Stock information was available in Tableau and the
+                    website sitemap was available through the CMS, but
+                    neither connected product IDs to the pages where they
+                    appeared.
+                </p>
+
+                <p>
+                    I needed to build that missing connection.
+                </p>
+
+            </div>
+
+
+            <!-- APPROACH -->
+
+            <div class="project-section">
+
+                <div class="section-label">
+                    <span>My Approach</span>
+                </div>
+
+                <p>
+                    I built a Python and PowerShell crawler that connects
+                    the existing stock data with the products found across
+                    the website.
+                </p>
+
+                <ol class="project-list">
+                    <li>Import stock data from Tableau into Google Sheets.</li>
+                    <li>Place the current website sitemap into the tool.</li>
+                    <li>Crawl 250+ product pages to identify product IDs on each URL.</li>
+                    <li>Map product IDs to their stockout information.</li>
+                    <li>Generate actionable results in Google Sheets.</li>
+                </ol>
+
+                <div class="project-image-grid">
+
+                    <figure class="project-image">
+                        <img
+                            src="images/uniqlo/crawler-01.gif"
+                            alt="Product crawler running on UNIQLO product pages"
+                        >
+                        <figcaption>
+                            Crawling the website to identify product IDs on each URL.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="project-image">
+                        <img
+                            src="images/uniqlo/crawler-02.gif"
+                            alt="Product crawler processing website data"
+                        >
+                        <figcaption>
+                            Processing the crawled data for the Google Sheets output.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+            </div>
+
+
+            <!-- USABILITY -->
+
+            <div class="project-section">
+
+                <div class="section-label">
+                    <span>Designed for the Team</span>
+                </div>
+
+                <p>
+                    I designed the workflow around the team's existing
+                    Google Sheets process rather than introducing a new
+                    interface.
+                </p>
+
+                <p>
+                    The tool uses one button to start the crawl, includes
+                    instructions in the sheet, hides helper sheets, and
+                    provides a Settings tab where the stockout threshold
+                    can be adjusted.
+                </p>
+
+                <p>
+                    The current crawl takes approximately 10–15 minutes
+                    to complete.
+                </p>
+
+            </div>
+
+
+            <!-- OUTPUTS -->
+
+            <div class="project-section">
+
+                <div class="section-label">
+                    <span>Outputs</span>
+                </div>
+
+                <p>
+                    The tool produces two main outputs: an actionable list
+                    of pages requiring attention and a summary of website
+                    stockout performance.
+                </p>
+
+                <figure class="project-image">
+                    <img
+                        src="images/uniqlo/products-to-remove.png"
+                        alt="Google Sheets output showing products and pages requiring attention"
+                    >
+                    <figcaption>
+                        Output identifying products and pages that meet
+                        the selected stockout threshold.
+                    </figcaption>
+                </figure>
+
+                <figure class="project-image">
+                    <img
+                        src="images/uniqlo/summary-output.png"
+                        alt="Google Sheets summary of website stockout performance"
+                    >
+                    <figcaption>
+                        Summary output showing product-level and website
+                        stockout information.
+                    </figcaption>
+                </figure>
+
+            </div>
+
+
+            <!-- STATUS -->
+
+            <div class="project-section">
+
+                <div class="section-label">
+                    <span>Where It's Going</span>
+                </div>
+
+                <p>
+                    The current version is still being refined and
+                    prepared for presentation to GHQ.
+                </p>
+
+                <p>
+                    Future iterations could incorporate sales goals and
+                    GA4 data to provide additional context around
+                    stockout and website performance.
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <a href="mailto:r89sun@uwaterloo.ca">
+            Email
+        </a>
+
+        <a
+            href="https://www.linkedin.com/in/rita-sun/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            LinkedIn
+        </a>
+
+        <a
+            href="https://github.com/rita-sun/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub
+        </a>
+
+    </footer>
+
+</body>
+</html>
