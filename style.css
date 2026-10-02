@@ -97,8 +97,16 @@ main {
     display: block;
     width: 48px;
     height: 48px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
     object-fit: contain;
+}
+
+
+.intro-name {
+    color: #888;
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
 
@@ -119,6 +127,11 @@ main {
     color: #aaa;
     font-size: 12px;
     line-height: 1.6;
+}
+
+
+.intro-info span {
+    color: #777;
 }
 
 
@@ -284,6 +297,13 @@ footer a:hover {
     .intro-image {
         width: 44px;
         height: 44px;
+        margin-bottom: 16px;
+    }
+
+
+    .intro-name {
+        font-size: 10px;
+        margin-bottom: 5px;
     }
 
 
