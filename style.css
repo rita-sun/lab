@@ -44,16 +44,21 @@ footer {
 .site-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     padding-top: 22px;
 }
 
 
 .logo {
-    color: #eee;
-    font-family: "Orbitron", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }
 
 
@@ -65,7 +70,7 @@ nav {
 
 nav a {
     color: #888;
-    font-family: "Orbitron", sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     font-size: 10px;
 }
 
@@ -103,10 +108,13 @@ main {
 
 
 .intro-name {
-    color: #888;
+    color: #5fa9a3;
+    font-family: "Orbitron", sans-serif;
     font-size: 10px;
     font-weight: 400;
-    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 7px;
 }
 
 
@@ -118,20 +126,24 @@ main {
 }
 
 
+/* INTRO INFO */
+
 .intro-info {
-    margin-top: 15px;
+    margin-top: 22px;
+    padding-top: 15px;
+    border-top: 1px dashed #303030;
 }
 
 
 .intro-info p {
-    color: #aaa;
+    color: #bbb;
     font-size: 12px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 
 .intro-info span {
-    color: #777;
+    color: #999;
 }
 
 
@@ -277,6 +289,12 @@ footer a:hover {
     }
 
 
+    .logo img {
+        width: 25px;
+        height: 25px;
+    }
+
+
     nav {
         gap: 12px;
     }
@@ -303,12 +321,18 @@ footer a:hover {
 
     .intro-name {
         font-size: 10px;
-        margin-bottom: 5px;
+        margin-bottom: 7px;
     }
 
 
     .intro h1 {
         font-size: 15px;
+    }
+
+
+    .intro-info {
+        margin-top: 20px;
+        padding-top: 13px;
     }
 
 
