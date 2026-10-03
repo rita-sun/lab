@@ -933,3 +933,37 @@ body.light-mode .process-arrow {
 body.light-mode .process-roadmap {
     border-color: #d2d2ce;
 }
+
+/* LIGHT MODE - RESUME */
+
+body.light-mode .resume-about {
+    color: #444;
+}
+
+body.light-mode .resume-entry {
+    border-color: #d2d2ce;
+}
+
+body.light-mode .resume-entry h2 {
+    color: #222;
+}
+
+body.light-mode .resume-role {
+    color: #555;
+}
+
+body.light-mode .resume-description {
+    color: #444;
+}
+
+body.light-mode .resume-skills {
+    border-color: #d2d2ce;
+}
+
+body.light-mode .resume-skills p {
+    color: #444;
+}
+
+body.light-mode .resume-skills span {
+    color: #555;
+}
