@@ -917,3 +917,19 @@ body.light-mode .idea-group h3 {
 body.light-mode .idea-group ul {
     color: #4f4f4f;
 }
+
+body.light-mode .process-name {
+    color: #333;
+}
+
+body.light-mode .process-number {
+    color: #3f8580;
+}
+
+body.light-mode .process-arrow {
+    color: #777;
+}
+
+body.light-mode .process-roadmap {
+    border-color: #d2d2ce;
+}
