@@ -46,8 +46,8 @@ if (stardrop) {
         const distanceX = event.clientX - centerX;
         const distanceY = event.clientY - centerY;
 
-        targetX = -(distanceX / (rect.width / 2)) * 7;
-        targetY = -(distanceY / (rect.height / 2)) * 7;
+        targetX = -(distanceX / (rect.width / 2)) * 14;
+        targetY = -(distanceY / (rect.height / 2)) * 14;
 
     });
 
