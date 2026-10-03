@@ -822,116 +822,98 @@ footer a:hover {
 }
 
 
-/* LIGHT MODE */
+/* LIGHT MODE - TEXT CONTRAST */
 
 body.light-mode {
     background: #f5f5f2;
-    color: #333;
+    color: #222;
 }
 
 body.light-mode nav a {
-    color: #777;
+    color: #555;
 }
 
 body.light-mode nav a:hover,
 body.light-mode footer a:hover,
 body.light-mode .theme-toggle:hover {
-    color: #4d8f89;
+    color: #3f8580;
 }
 
 body.light-mode .theme-toggle {
-    color: #777;
+    color: #555;
 }
+
+/* Homepage */
 
 body.light-mode .intro h1 {
-    color: #333;
-}
-
-body.light-mode .intro-info {
-    border-color: #d2d2ce;
+    color: #222;
 }
 
 body.light-mode .intro-info p {
-    color: #666;
+    color: #4f4f4f;
 }
 
 body.light-mode .intro-info span {
-    color: #888;
+    color: #666;
 }
 
 body.light-mode .section-label {
-    color: #4d8f89;
-}
-
-body.light-mode .project {
-    border-color: #d2d2ce;
-}
-
-body.light-mode .project:hover {
-    background: #ecece8;
+    color: #3f8580;
 }
 
 body.light-mode .project-year {
-    color: #4d8f89;
+    color: #3f8580;
 }
 
 body.light-mode .project-info h2 {
-    color: #333;
+    color: #222;
 }
 
 body.light-mode .project-info p {
-    color: #777;
+    color: #555;
 }
 
 body.light-mode .tools span {
-    background: rgba(77, 143, 137, 0.07);
-    border-color: rgba(77, 143, 137, 0.2);
-    color: #666;
+    background: rgba(63, 133, 128, 0.06);
+    border-color: rgba(63, 133, 128, 0.2);
+    color: #555;
 }
 
 body.light-mode footer {
-    color: #888;
+    color: #666;
 }
 
 
-/* LIGHT MODE - PROJECT PAGES */
+/* Project pages */
 
 body.light-mode .project-meta {
-    color: #777;
+    color: #555;
 }
 
 body.light-mode .project-intro h1 {
-    color: #333;
+    color: #222;
 }
 
 body.light-mode .project-summary {
-    color: #666;
-}
-
-body.light-mode .project-section {
-    border-color: #d2d2ce;
+    color: #4f4f4f;
 }
 
 body.light-mode .project-section h2 {
-    color: #333;
+    color: #222;
 }
 
 body.light-mode .project-section p {
-    color: #666;
-}
-
-body.light-mode .project-image img {
-    border-color: #d6d6d2;
+    color: #4f4f4f;
 }
 
 body.light-mode .project-image figcaption {
-    color: #888;
+    color: #666;
 }
 
 body.light-mode .idea-group h3 {
-    color: #444;
+    color: #333;
 }
 
 body.light-mode .idea-group ul {
-    color: #666;
+    color: #4f4f4f;
 }
