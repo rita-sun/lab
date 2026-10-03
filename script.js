@@ -24,3 +24,48 @@ projects.forEach((project) => {
     });
 
 });
+
+/* STARDROP CURSOR INTERACTION */
+
+const stardrop = document.querySelector(".intro-image");
+
+if (stardrop) {
+
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+
+    stardrop.addEventListener("mousemove", (event) => {
+
+        const rect = stardrop.getBoundingClientRect();
+
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        const distanceX = event.clientX - centerX;
+        const distanceY = event.clientY - centerY;
+
+        targetX = -(distanceX / (rect.width / 2)) * 7;
+        targetY = -(distanceY / (rect.height / 2)) * 7;
+
+    });
+
+    stardrop.addEventListener("mouseleave", () => {
+        targetX = 0;
+        targetY = 0;
+    });
+
+    function animateStardrop() {
+
+        currentX += (targetX - currentX) * 0.15;
+        currentY += (targetY - currentY) * 0.15;
+
+        stardrop.style.transform =
+            `translate(${currentX}px, ${currentY}px)`;
+
+        requestAnimationFrame(animateStardrop);
+    }
+
+    animateStardrop();
+}

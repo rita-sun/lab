@@ -790,24 +790,14 @@ footer a:hover {
     animation: stardrop-float 0.7s ease;
 }
 
-@keyframes stardrop-float {
-    0% {
-        transform: translateY(0) scale(1);
-    }
+/* STARDROP CURSOR INTERACTION */
 
-    25% {
-        transform: translateY(-7px) scale(1.08);
-    }
-
-    50% {
-        transform: translateY(-10px) scale(1.12);
-    }
-
-    75% {
-        transform: translateY(-4px) scale(1.06);
-    }
-
-    100% {
-        transform: translateY(0) scale(1);
-    }
+.intro-image {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+    object-fit: contain;
+    transition: transform 0.12s ease-out;
+    will-change: transform;
 }
